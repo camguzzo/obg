@@ -1,0 +1,256 @@
+/* GENERALES DEL BODY */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+/* TIPOGRAFÍAS */
+@font-face {
+    font-family: 'Kunstler Script';
+    src: url(./fonts/kunstlerscript.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lexend Zetta';
+    src: url(./fonts/LexendZetta-Light.ttf) format('truetype');
+}
+
+/* HEADER O NAVBAR */
+.home-page {
+    width: 100%;
+    position: relative;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: left;
+    font-size: 24px;
+    color: #000;
+    font-family: 'Lexend Zetta';
+}
+
+.sofia-coppola-archives {
+    position: absolute;
+    top: -10px;
+    left: 55%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 300px;
+}
+
+.sofia-coppola-archives img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: -75px;
+    position: relative;
+    height: 105px;
+    color: #000;
+    font-family: 'Lexend Zetta';
+}
+
+.home {
+    position: absolute;
+    top: 30px;
+    left: 265px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.movies {
+    position: absolute;
+    top: 30px;
+    left: 380px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.biography {
+    position: absolute;
+    top: 30px;
+    left: 985px;
+    font-size: 14px;
+}
+
+.log-in {
+    position: absolute;
+    top: 30px;
+    left: 1140px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.home:hover,
+.movies:hover,
+.biography:hover,
+.log-in:hover {
+    color: #F4C6CB;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+/* BOTÓN DE REGRESO AL HOME ORIGINAL */
+.button-return-home {
+    position: absolute;
+    top: 130px;
+    left: 1140px;
+    width: 450px;
+    height: 53px;
+    font-size: 10px;
+    color: #f4c6cb;
+    transition: all 0.3s ease;
+}
+
+.return-home {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 100px;
+    height: 53px;
+    display: inline-block;
+    font-family: 'Lexend Zetta';
+    color: #f4c6cb;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.return-home:hover {
+    background-color: #fdd4d9;
+    color: #fff;
+    border: 2px solid #e7abb2;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    border: 2px solid #f4c6cb;
+    box-shadow: 0 0 5px #f4c6cb;
+}
+
+/* IMÁGENES INTERACTIVAS / ARRASTRABLES */
+.interactive-img {
+    position: relative;
+    max-width: 100%;
+    height: 450px;
+    margin-bottom: 0%;
+}
+
+.interactive-img img {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s;
+}
+
+/* FOOTER / PIE DE PÁGINA */
+.footer {
+    background-color: #d3d2d2;
+    margin-top: 150px;
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.footer-information {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 30px;
+    font-size: 8px;
+    text-align: center;
+}
+
+.footer-credits {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* FORMULARIO EN VENTANA MODAL */
+.upModal {
+    font-family: 'Lexend Zetta';
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4c6cba1;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.upModal p {
+    font-size: 10px;
+}
+
+.upModal .input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    font-family: 'Lexend Zetta';
+    border: 1px solid #ccc;
+}
+
+#inputs {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #F4C6CB;
+}
+
+.closeModal {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#submitSignUp {
+    background-color: #f4c6cb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Lexend Zetta';
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+#submitSignUp:hover {
+    background-color: #f5b8bf;
+}
+
+.upModal .input:focus {
+    outline: none;
+    border: 2px solid #f4c6cb;
+    box-shadow: 0 0 5px #f4c6cb;
+}

@@ -1,0 +1,399 @@
+/* GENERALES DEL BODY */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+/* TIPOGRAFÍAS */
+@font-face {
+    font-family: 'Kunstler Script';
+    src: url(./fonts/kunstlerscript.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lexend Zetta';
+    src: url(../fonts/LexendZetta-Light.ttf) format('truetype');
+}
+
+/* VENTANA MODAL - SUGERENCIAS DE PELÍCULAS */
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 30px;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #f4c6cba1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal p {
+    font-family: 'Lexend Zetta';
+    font-size: 10px;
+    color: #000;
+}
+
+#modalTitle img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: 3px;
+    left: 49%;
+    transform: translateX(-50%);
+    height: auto;
+    width: 580px;
+    z-index: 1000;
+}
+
+#modalContent {
+    background-color: #F4F4F4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    justify-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    font-family: 'Lexend Zetta';
+    margin-bottom: -100px;
+    max-width: 600px;
+    max-height: 400px;
+    box-shadow: 0 0 20px #FFBDC7;
+
+}
+
+.close {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.movie-card {
+    height: auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.movie-card img {
+    width: 170px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.movie-title {
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.movie-card img:hover {
+    filter: brightness(0.7) sepia(1) hue-rotate(-60deg) saturate(2);
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+/* HEADER / NAVBAR */
+.home-page {
+    width: 100%;
+    position: relative;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: left;
+    font-size: 24px;
+    color: #000;
+    font-family: 'Lexend Zetta';
+
+}
+
+.sofia-coppola-archives {
+    position: absolute;
+    top: -10px;
+    left: 55%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 300px;
+}
+
+.sofia-coppola-archives img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: -75px;
+    position: relative;
+    height: 105px;
+    color: #000;
+    font-family: 'Lexend Zetta';
+}
+
+.home {
+    position: absolute;
+    top: 30px;
+    left: 265px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.movies {
+    position: absolute;
+    top: 30px;
+    left: 380px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.biography {
+    position: absolute;
+    top: 30px;
+    left: 985px;
+    font-size: 14px;
+}
+
+.log-in {
+    position: absolute;
+    top: 30px;
+    left: 1140px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.home:hover,
+.movies:hover,
+.biography:hover,
+.log-in:hover {
+    color: #F4C6CB;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+
+/* CARRUSEL / SLIDER DE IMÁGENES */
+.img-carrousel {
+    margin: auto;
+    margin-top: 5px;
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.img-carrousel img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.img-carrousel button {
+    position: absolute;
+    font-size: 30px;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#btnIzq {
+    top: 205px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+#btnDer {
+    top: 205px;
+    left: 1165px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+#btnIzq:hover,
+#btnDer:hover {
+    color: #fdd4d9;
+    transform: scale(1.03);
+}
+
+/* BOTÓN HACIA HOME ALTERNATIVO */
+.button-alternative-home {
+    position: absolute;
+    top: 145px;
+    left: 940px;
+    width: 450px;
+    height: 53px;
+    font-size: 10px;
+    color: #f4c6cb;
+
+}
+
+.activate-alt-home {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 300px;
+    height: 53px;
+    display: inline-block;
+    font-family: 'Lexend Zetta';
+    color: #f4c6cb;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.activate-alt-home:hover {
+    background-color: #fdd4d9;
+    color: #fff;
+    border: 2px solid #e7abb2;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    border: 2px solid #f4c6cb;
+    box-shadow: 0 0 5px #f4c6cb;
+}
+
+/* FORMULARIO EN VENTANA MODAL */
+.upModal {
+    font-family: 'Lexend Zetta';
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4c6cba1;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.upModal p {
+    font-size: 10px;
+}
+
+.upModal .input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    font-family: 'Lexend Zetta';
+    border: 1px solid #ccc;
+}
+
+#inputs {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #F4C6CB;
+}
+
+.closeModal {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#submitSignUp {
+    background-color: #f4c6cb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Lexend Zetta';
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+#submitSignUp:hover {
+    background-color: #f5b8bf;
+}
+
+.upModal .input:focus {
+    outline: none;
+    border: 2px solid #f4c6cb;
+    box-shadow: 0 0 5px #f4c6cb;
+}
+
+/* FOOTER / PIE DE PÁGINA */
+.footer {
+    background-color: #d3d2d2;
+    margin-top: 150px;
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.footer-information {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 30px;
+    font-size: 8px;
+    text-align: center;
+}
+
+.footer-credits {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+    font-size: 10px;
+    text-align: center;
+}

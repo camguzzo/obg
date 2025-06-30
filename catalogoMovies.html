@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="./css/stylesCatalogo.css">
+</head>
+
+<body>
+    <!-- HEADER / NAVBAR -->
+    <div class="navbar">
+        <div class="header">
+            <div class="sofia-coppola-archives"></div>
+            <div class="home">Home</div>
+            <div class="movies">Películas</div>
+            <div class="biography">Biografía</div>
+            <div class="log-in">Ingresar</div>
+        </div>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="filters">
+        <div class="filterGenres">
+            <select id="genres"></select>
+        </div>
+        <div class="filterSearch">
+            <input type="text" id="search" placeholder="Buscador">
+        </div>
+    </div>
+
+    <!-- CONTENEDOR DE PELICULAS -->
+    <div class="movie-container"></div>
+
+    <!-- FOOTER / PIE DE PÁGINA -->
+    <div class="footer">
+        <div class="footer-information">
+            <div class="footer-credits">
+                Copyright &#169; 2025: Designed by Camila Guzzo
+            </div>
+        </div>
+    </div>
+
+        <!-- FORMULARIO EN VENTANA MODAL -->
+    <div id="signUpModal" class="upModal">
+        <span id="closeSignUpModal" class="closeModal">&times;</span>
+        <div id="modalTitle"></div>
+        <div id="inputs">
+            <input id="name" class="input" placeholder="Nombre">
+            <p id="msj1" class="errorMsj"></p>
+            <input id="surname" class="input" placeholder="Apellido">
+            <p id="msj2" class="errorMsj"></p>
+            <input id="age" class="input" placeholder="Edad">
+            <p id="msj3" class="errorMsj"></p>
+            <input id="email" class="input" placeholder="Email">
+            <p id="msj4" class="errorMsj"></p>
+            <input id="number" class="input" placeholder="Número de teléfono">
+            <p id="msj5" class="errorMsj"></p>
+            <input id="password" class="input" placeholder="Contraseña">
+            <p id="msj6" class="errorMsj"></p>
+            <button id="submitSignUp">Enviar</button>
+        </div>
+    </div>
+
+    <script src="./js/scriptDatos.js"></script>
+    <script src="./js/scriptFormulario.js"></script>
+    <script src="./js/scriptCatalogo.js"></script>
+
+</body>
+
+</html>

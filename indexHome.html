@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia Coppola Archives</title>
+    <link rel="stylesheet" href="./css/stylesHome.css">
+</head>
+
+<body>
+    <div class="home-page">
+
+        <!-- HEADER / NAVBAR -->
+        <div class="header">
+            <div class="sofia-coppola-archives"></div>
+            <div class="home">Home</div>
+            <div class="movies">Películas</div>
+            <div class="biography">Biografía</div>
+            <div class="log-in">Ingresar</div>
+        </div>
+
+        <!-- CARRUSEL / SLIDER DE IMÁGENES -->
+        <div class="img-carrousel">
+            <button id="btnIzq">&#10094;</button>
+            <img id="img-slider" src="">
+            <button id="btnDer">&#10095;</button>
+        </div>
+
+        <!-- BOTÓN HACIA HOME ALTERNATIVO -->
+        <div class="button-alternative-home">
+            <button class="activate-alt-home">Activar modo interactivo</button>
+        </div>
+
+        <!-- FOOTER / PIE DE PÁGINA -->
+        <div class="footer">
+            <div class="footer-information">
+                <div class="footer-credits">
+                    Copyright &#169; 2025: Designed by Camila Guzzo
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VENTANA MODAL CON RECOMENDACIONES DE PELÍCULAS -->
+    <div id="modalWindow" class="modal">
+        <span id="closeRecomModal" class="close">&times;</span>
+        <div id="modalTitle"></div>
+        <div id="modalContent">
+        </div>
+    </div>
+
+    <!-- FORMULARIO EN VENTANA MODAL -->
+    <div id="signUpModal" class="upModal">
+        <span id="closeSignUpModal" class="closeModal">&times;</span>
+        <div id="modalTitle"></div>
+        <div id="inputs">
+            <input id="name" class="input" placeholder="Nombre">
+            <p id="msj1" class="errorMsj"></p>
+            <input id="surname" class="input" placeholder="Apellido">
+            <p id="msj2" class="errorMsj"></p>
+            <input id="age" class="input" placeholder="Edad">
+            <p id="msj3" class="errorMsj"></p>
+            <input id="email" class="input" placeholder="Email">
+            <p id="msj4" class="errorMsj"></p>
+            <input id="number" class="input" placeholder="Número de teléfono">
+            <p id="msj5" class="errorMsj"></p>
+            <input id="password" class="input" placeholder="Contraseña">
+            <p id="msj6" class="errorMsj"></p>
+            <button id="submitSignUp">Enviar</button>
+        </div>
+    </div>
+
+    <script src="./js/scriptDatos.js"></script>
+    <script src="./js/scriptFormulario.js"></script>
+    <script src="./js/scriptHome.js"></script>
+
+</body>
+
+</html>

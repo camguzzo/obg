@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stylesAmpliacion.css">
+</head>
+
+<body>
+    <!--HEADER / NAVBAR-->
+    <div class="navbar">
+        <div class="header">
+            <div class="sofia-coppola-archives"></div>
+            <div class="home">Home</div>
+            <div class="movies">Películas</div>
+            <div class="biography">Biografía</div>
+            <div class="log-in">Ingresar</div>
+        </div>
+    </div>
+
+    <!-- TÍTULO PELÍCULA + AÑO + GALERÍA DE IMÁGENES -->
+    <div class="container">
+        <div id="left-panel">
+            <h1 id="name"></h1>
+            <p><span id="year"></span></p>
+
+            <div id="media-wrapper">
+                <div id="expanded-image"></div>
+                <div class="gallery"></div>
+            </div>
+        </div>
+
+        <!-- FICHA TÉCNICA DE LA PELÍCULA -->
+        <div id="info-panel">
+            <div id="meta-info">
+                <p><span id="director"></span></p>
+                <p><span id="duration"></span></p>
+                <p><span id="country"></span></p>
+            </div>
+
+            <p><span id="synopsis"></span></p>
+            <br>
+
+            <div id="credits-row">
+                <div id="left-credits">
+                    <p><strong>Reparto principal:</strong></p>
+                    <p><span id="actors"></span></p>
+                </div>
+
+                <div id="right-credits">
+                    <p><strong>Guion:</p></strong>
+                    <p><span id="screenwriter"></span></p>
+                    <p><strong>Productoras:</p></strong>
+                    <p><span id="producers"></span></p>
+                    <p><span id="genre"></span></p><br>
+                </div>
+            </div>
+
+            <ul id="castList"></ul>
+        </div>
+
+        <!-- SUGERENCIAS EN FUNCIÓN AL GENERO (PELÍCULA, CORTOMETRAJE, ETC)-->
+        <div class="co-related">
+            <h2></h2>
+        </div>
+    </div>
+
+    <!-- FOOTER / PIE DE PÁGINA -->
+    <div class="footer">
+        <div class="footer-information">
+            <div class="footer-credits">
+                Copyright &#169; 2025: Designed by Camila Guzzo
+            </div>
+        </div>
+    </div>
+
+        <!-- FORMULARIO EN VENTANA MODAL -->
+    <div id="signUpModal" class="upModal">
+        <span id="closeSignUpModal" class="closeModal">&times;</span>
+        <div id="modalTitle"></div>
+        <div id="inputs">
+            <input id="name" class="input" placeholder="Nombre">
+            <p id="msj1" class="errorMsj"></p>
+            <input id="surname" class="input" placeholder="Apellido">
+            <p id="msj2" class="errorMsj"></p>
+            <input id="age" class="input" placeholder="Edad">
+            <p id="msj3" class="errorMsj"></p>
+            <input id="email" class="input" placeholder="Email">
+            <p id="msj4" class="errorMsj"></p>
+            <input id="number" class="input" placeholder="Número de teléfono">
+            <p id="msj5" class="errorMsj"></p>
+            <input id="password" class="input" placeholder="Contraseña">
+            <p id="msj6" class="errorMsj"></p>
+            <button id="submitSignUp">Enviar</button>
+        </div>
+    </div>
+
+    <script src="./js/scriptDatos.js"></script>
+    <script src="./js/scriptFormulario.js"></script>
+    <script src="./js/scriptAmpliacion.js"></script>
+
+</body>
+
+</html>
