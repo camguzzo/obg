@@ -4,7 +4,7 @@ const movies = document.querySelector(".movies");
 const btnReturnHome = document.querySelector(".return-home");
 
 function goToHome() {
-    window.location.href = "./indexHome.html";
+    window.location.href = "./index.html";
 } home.addEventListener("click", goToHome)
 
 function goToMovies() {
@@ -12,7 +12,7 @@ function goToMovies() {
 } movies.addEventListener("click", goToMovies)
 
 function returnHome() {
-    window.location.href = "./indexHome.html";
+    window.location.href = "./index.html";
 } btnReturnHome.addEventListener("click", returnHome)
 
 // LOGO DE LA NAVBAR

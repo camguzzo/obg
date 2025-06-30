@@ -4,7 +4,7 @@ const movies = document.querySelector(".movies");
 const btnAltHome = document.querySelector(".activate-alt-home");
 
 function goToHome() { // Redirige al usuario al archivo indexHome.html
-  window.location.href = "./indexHome.html"; 
+  window.location.href = "./index.html"; 
 } home.addEventListener("click", goToHome)
 
 function goToMovies() {  // Redirige al usuario al archivo catalogoMovies.html

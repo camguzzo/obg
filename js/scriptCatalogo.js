@@ -3,7 +3,7 @@ const home = document.querySelector(".home");
 const movies = document.querySelector(".movies");
 
 function goToHome() {
-    window.location.href = "./indexHome.html";
+    window.location.href = "./index.html";
 } home.addEventListener("click", goToHome)
 
 function goToMovies() {
